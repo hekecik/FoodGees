@@ -1,0 +1,249 @@
+$vert: #99E2D0;
+$gris : #F2F2F2;
+$violet: #9356DC;
+$rose: #FF79DA;
+
+header {
+    background: white;
+    width: 100%;
+    z-index: 2;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo_home {
+        font-family: "Shrikhand",cursive;
+        font-weight: 700;
+        font-size: 40px;
+        font-style: italic;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+// navbar ------------------------------
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #e3e2e2;
+    color: #444444;
+    padding: 30px;
+    width: 100%;
+
+    .fa-location-dot {
+        padding-right: 10px;
+    }
+}
+
+.hero {
+    background-color: #F2F2F2;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #444444;
+    padding: 35px;
+
+    .hero_title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .hero_subtitle {
+        font-size: 28px;
+        font-weight: 100;
+        padding: 30px;
+    }
+
+    .hero_button {
+        background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+        border: 0 solid transparent;
+        border-radius: 30px;
+        box-shadow: #DCDCDC 0px 7px 29px 0px;
+        transition: transform 0.2s ease-in-out;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0 auto;
+        padding: 1em 1.5em;
+        cursor: pointer;
+    }
+    .hero_button:hover {
+        filter: brightness(1.1);
+        transform: scale(1.03);
+    }
+}
+
+// Partie fonctionnement ----------------------
+
+.tuto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    padding: 35px;
+
+    .tuto_title {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 25px;
+    }
+
+    .tuto_grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .tuto_card {
+        font-weight: 700;
+        font-size: 20px;
+        background-color: $gris;
+        padding: 20px 20px 20px 7px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px 3px #ccc8c8;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .tuto_number {
+            background-color: $violet;
+            color: white;
+            border-radius: 45px;
+            padding: 5px 10px;
+            position: absolute;
+            left: -19px;
+        }
+
+        .tuto_icon {
+            padding: 0px 15px 0px 15px;
+        }
+
+        &:hover {
+            background-color: #e5d7f7;
+            transform: translateY(-3px);
+
+            .tuto_icon {
+                color: $violet;
+            }
+        }
+    }
+}
+
+// Partie restaurants --------------------------
+
+.restaurants {
+    background-color: $gris;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+
+    .restaurant_title {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 20px 0px;
+    }
+
+    .cardsGrid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .card_restaurant {
+        background-color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        box-shadow: #DCDCDC 0px 7px 29px 0px;
+        transition: transform 0.2s ease-in-out;
+
+        img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .tag {
+            background: #a9e0d1;
+            color: #3b8468;
+            font-weight: 500;
+            padding: 7px;
+            border-radius: 0.3rem;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+        .card_infos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .fa-heart {
+            bottom: 1em;
+            cursor: pointer;
+            font-size: 25px;
+            position: absolute;
+            right: 1em;
+            transition: all .2s ease-in-out;
+        }
+        .fa-heart:hover {
+            background: linear-gradient(#9356DC, #FF79DA);
+            color: #fff;
+            font-weight: 600;
+            transform: scale(1.2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            gap: 5px;
+
+            .rest_title {
+                font-size: 19px;
+                font-weight: 700;
+            }
+
+            .rest_subtitle {
+                font-size: 18px;
+                font-weight: 100;
+            }
+        }
+    }
+    .card_restaurant:hover {
+        transform: scale(1.03);
+    }
+}
+
+// Footer ------------------------------
+
+footer {
+    background-color: #444444;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+
+    h3 {
+        font-family: "Shrikhand", cursive;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,493 @@
+header {
+  background: white;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo_home {
+  font-family: "Shrikhand", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: #e3e2e2;
+  color: #444444;
+  padding: 30px;
+  width: 100%;
+}
+.location .fa-location-dot {
+  padding-right: 10px;
+}
+
+.hero {
+  background-color: #F2F2F2;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: #444444;
+  padding: 35px;
+}
+.hero .hero_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.hero .hero_subtitle {
+  font-size: 28px;
+  font-weight: 100;
+  padding: 30px;
+}
+.hero .hero_button {
+  background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+  border: 0 solid transparent;
+  border-radius: 30px;
+  box-shadow: #DCDCDC 0px 7px 29px 0px;
+  transition: transform 0.2s ease-in-out;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+.hero .hero_button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+.tuto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  padding: 35px;
+}
+.tuto .tuto_title {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.tuto .tuto_grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+}
+.tuto .tuto_card {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #F2F2F2;
+  padding: 20px 20px 20px 7px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px #ccc8c8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.tuto .tuto_card .tuto_number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 45px;
+  padding: 5px 10px;
+  position: absolute;
+  left: -19px;
+}
+.tuto .tuto_card .tuto_icon {
+  padding: 0px 15px 0px 15px;
+}
+.tuto .tuto_card:hover {
+  background-color: #e5d7f7;
+  transform: translateY(-3px);
+}
+.tuto .tuto_card:hover .tuto_icon {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+}
+.restaurants .restaurant_title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+.restaurants .cardsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 35px;
+}
+.restaurants .card_restaurant {
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  box-shadow: #DCDCDC 0px 7px 29px 0px;
+  transition: transform 0.2s ease-in-out;
+}
+.restaurants .card_restaurant img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants .card_restaurant .tag {
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.restaurants .card_restaurant .card_infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants .card_restaurant .fa-heart {
+  bottom: 1em;
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  right: 1em;
+  transition: all 0.2s ease-in-out;
+}
+.restaurants .card_restaurant .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #fff;
+  font-weight: 600;
+  transform: scale(1.2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants .card_restaurant .description {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 5px;
+}
+.restaurants .card_restaurant .description .rest_title {
+  font-size: 19px;
+  font-weight: 700;
+}
+.restaurants .card_restaurant .description .rest_subtitle {
+  font-size: 18px;
+  font-weight: 100;
+}
+.restaurants .card_restaurant:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #444444;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+header .backhome_icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding-left: 30px;
+  font-size: 30px;
+}
+header .logo_menu {
+  margin: auto;
+  font-family: "Shrikhand", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: italic;
+  color: black;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.menu_wrapper {
+  position: relative;
+  background: #F2F2F2;
+  border-radius: 2.5rem 2.5rem 0 0;
+  margin-top: -2.5rem;
+  padding: 20px;
+}
+.menu_wrapper .menu_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.menu_wrapper .menu_header .menu_a_title {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+.menu_wrapper .menu_header .fa-heart {
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.2s ease-in-out;
+}
+.menu_wrapper .menu_header .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: #fff;
+  font-weight: 600;
+  transform: scale(1.2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_wrapper .all_menus {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 64px;
+  padding: 40px 0px;
+}
+.menu_wrapper .all_menus .menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu_wrapper .all_menus .menu_list h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+.menu_wrapper .all_menus .menu_list .fil {
+  width: 60px;
+  height: 5px;
+  background-color: #99e2d0;
+  bottom: -1.5rem;
+  left: 0;
+}
+.menu_wrapper .all_menus .menu_list .menu_item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.2s;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_info {
+  padding: 15px;
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_info .menu_text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_info .menu_text .menu_title {
+  font-size: 17px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_info .menu_text .menu_subtitle {
+  font-weight: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_info .menu_price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_selection {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 4em;
+  margin-right: -64px;
+  visibility: hidden;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  transform-origin: right;
+}
+.menu_wrapper .all_menus .menu_list .menu_item .menu_selection .check_icon {
+  font-size: 25px;
+  color: white;
+}
+.menu_wrapper .all_menus .menu_list .menu_item:hover .menu_selection {
+  visibility: visible;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
+}
+.menu_wrapper .all_menus .menu_list .menu_item:hover .menu_selection .check_icon {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.menu_wrapper .all_menus .menu_list .menu_item:hover .menu_info .menu_text {
+  margin-right: 50px;
+  transition-duration: 1s;
+}
+.menu_wrapper .all_menus .menu_list .menu_item:hover .menu_price {
+  transition: all 0.5s ease-in;
+  transform: translateX(-200%);
+}
+.menu_wrapper .mainButton {
+  background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+  border-radius: 30px;
+  box-shadow: #DCDCDC 0px 7px 29px 0px;
+  transition: transform 0.2s ease-in-out;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  text-align: center;
+  width: min-content;
+}
+.menu_wrapper .mainButton:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.load_screen {
+  background: #444444;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 3s forwards;
+}
+.load_screen .spinner_big {
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  border: 3rem solid rgba(161, 160, 160, 0);
+  border-top: 3rem solid #9356dc;
+  border-left: 3rem solid #9356dc;
+  border-bottom: 3rem solid #9356dc;
+  animation: spinneroff 0.8s 0.2s 5;
+}
+.load_screen .spinner {
+  border: 2rem solid rgba(161, 160, 160, 0);
+  border-top: 2rem solid #ff79da;
+  border-right: 2rem solid #ff79da;
+  border-bottom: 2rem solid #ff79da;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  opacity: 1;
+  animation: spinner 0.8s 0.2s 5;
+  position: absolute;
+}
+.load_screen .spinner_small {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1.5rem solid rgba(161, 160, 160, 0);
+  border-top: 1.5rem solid #99e2d0;
+  border-left: 1.5rem solid #99e2d0;
+  border-bottom: 1.5rem solid #99e2d0;
+  animation: spinneroff 0.8s 0.2s 5;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinneroff {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media (min-width: 1000px) {
+  .tuto .tuto_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .restaurants .cardsGrid {
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .menu_wrapper .all_menus {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

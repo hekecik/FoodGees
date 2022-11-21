@@ -1,0 +1,11 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+   "compile": "sass sass/main.scss sass/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

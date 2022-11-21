@@ -1,0 +1,18 @@
+// Media queries -----------------------------------
+@media (min-width: 1000px) {
+    .tuto .tuto_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .restaurants {
+        .cardsGrid {
+            grid-template-columns: repeat(2, 2fr);
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+
+    }
+    .menu_wrapper .all_menus {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
